@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandan Sharma - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="#about" class="nav-link"><i class="fas fa-user"></i> About Me</a>
+                <a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
+                <a href="#contact" class="nav-link"><i class="fas fa-phone-alt"></i> Contact Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <figure>
+                <img src="profile.jpg" alt="Chandan Sharma Thakur" class="profile-image">
+            </figure>
+
+            <div class="text-container">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Hi, I'm Chandan Sharma Thakur, a passionate full-stack developer, video editor and annotator. Explore
+                    my projects and get to know more about
+                    me.</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/chandan-sharma-thakur-b095ba2a6/?fbclid=IwY2xjawIMEqVleHRuA2FlbQIxMAABHU4qgVngPSb_RpCzuUl0bu-Vg5jAkONmOXbT806uq_YirH8e7BNWVuWOBg_aem_LyQlsulMWFzZtBc5GiAmUw"
+                    target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/1chandansharma" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100008782486326" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/chandan_sharma9/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat">
+                    <h2 id="projects-count">10+</h2>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat">
+                    <h2 id="experience">2+</h2>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="stat">
+                    <h2 id="technologies">10+</h2>
+                    <p>Technologies Mastered</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>I'm Chandan Sharma, an aspiring Full-Stack Developer and Freelancer with knowledge of <strong>C, C++,
+                    JavaScript, HTML,
+                    CSS</strong>, and technologies like <strong>React</strong> and <strong>MongoDB</strong>. I'm
+                passionate about
+                both front-end and back-end development, and I'm working toward building dynamic, user-focused web
+                applications.</p>
+
+            <h3>Core Skills</h3>
+            <ul>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React</li>
+                <li><strong>Programming Languages:</strong> C, C++</li>
+                <li><strong>Database:</strong> MongoDB</li>
+                <li><strong>Freelancing Skills:</strong> Translation, Transcription, Annotation, Programming</li>
+                <li><strong>Other Skills:</strong> Graphics & Animation, Games Editing</li>
+            </ul>
+
+            <h3>Experience</h3>
+            <p>I am currently pursuing my Bachelor's in Computer Science and IT at Madan Bhandari Memorial College. I
+                have
+                freelanced in various fields, including programming, editing, and translation, and I'm continuously
+                developing my full-stack development skills through personal projects and coursework.</p>
+
+            <h3>Education</h3>
+            <p><strong>Bachelor of Computer Science and Information Technology</strong> (Ongoing)<br>
+                Madan Bhandari Memorial College, Kathmandu</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>Task Manager App</h3>
+                    <p>A to-do list app with drag-and-drop functionality.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Source Code</a>
+                        <a href="#" class="btn">Watch Demo</a>
+                        <a href="#" class="btn">Try It</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <h3>E-Commerce Website</h3>
+                    <p>A full-stack e-commerce store with cart and checkout.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Source Code</a>
+                        <a href="#" class="btn">Watch Demo</a>
+                        <a href="#" class="btn">Try It</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <h3>Portfolio Website</h3>
+                    <p>My personal portfolio showcasing my work and skills.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Source Code</a>
+                        <a href="#" class="btn">Watch Demo</a>
+                        <a href="#" class="btn">Try It</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-form">
+                <form action="submit_contact.php" method="POST">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="number">Phone Number</label>
+                    <input type="tel" id="number" name="number" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="purpose">Purpose of Contact</label>
+                    <textarea id="purpose" name="purpose" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+
+    <footer>
+        <p>&copy; 2025 Chandan Sharma. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
