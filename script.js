@@ -162,20 +162,25 @@ window.addEventListener('resize', setResponsiveMenu);
 
 
 //js for email sent to me 
-// Initialize EmailJS
-(function(){
-  emailjs.init("JSNW18NPSlcYpAwWAsWO9"); // Replace with your actual User ID/Public Key
-})();
+document.addEventListener("DOMContentLoaded", function() {
+  (function(){
+    emailjs.init("JSNW18NPSlcYpAwWAsWO9");
+  })();
 
-// Add event listener to your form
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault();
+  var form = document.getElementById("contact-form");
+  if(form) {
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
 
-  emailjs.sendForm('service_kslrfjq', 'template_pnumybr', this)
-    .then(function() {
-      alert('Message sent! Thank you for contacting me.');
-      document.getElementById("contact-form").reset();
-    }, function(error) {
-      alert('Failed to send: ' + JSON.stringify(error));
+      emailjs.sendForm('service_kslrfjq', 'template_pnumybr', this)
+        .then(function() {
+          alert('Message sent! Thank you for contacting me.');
+          form.reset();
+        }, function(error) {
+          alert('Failed to send: ' + JSON.stringify(error));
+        });
     });
+  } else {
+    console.log("Form not found!");
+  }
 });
