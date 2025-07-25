@@ -159,3 +159,23 @@ const setResponsiveMenu = () => {
 // Call on load and resize
 window.addEventListener('load', setResponsiveMenu);
 window.addEventListener('resize', setResponsiveMenu);
+
+
+//js for email sent to me 
+// Initialize EmailJS
+(function(){
+  emailjs.init("JSNW18NPSlcYpAwWAsWO9"); // Replace with your actual User ID/Public Key
+})();
+
+// Add event listener to your form
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm('service_kslrfjq', 'template_pnumybr', this)
+    .then(function() {
+      alert('Message sent! Thank you for contacting me.');
+      document.getElementById("contact-form").reset();
+    }, function(error) {
+      alert('Failed to send: ' + JSON.stringify(error));
+    });
+});

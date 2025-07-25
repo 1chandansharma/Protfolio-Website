@@ -136,31 +136,31 @@
         <div class="container">
             <h2 class="section-title">Contact Me</h2>
             <div class="contact-form">
-                <form action="submit_contact.php" method="POST">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
+                <!-- <form action="https://formspree.io/f/yourFormID" method="POST"> -->
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
 
-                    <label for="number">Phone Number</label>
-                    <input type="tel" id="number" name="number" required>
+                <label for="number">Phone Number</label>
+                <input type="tel" id="number" name="number" required>
 
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
 
-                    <label for="purpose">Purpose of Contact</label>
-                    <textarea id="purpose" name="purpose" rows="4" required></textarea>
+                <label for="purpose">Purpose of Contact</label>
+                <textarea id="purpose" name="purpose" rows="4" required></textarea>
 
-                    <button type="submit">Submit</button>
+                <button type="submit">Submit</button>
+                <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html"> -->
                 </form>
             </div>
         </div>
     </section>
-
     <button id="dark-mode-toggle">🌙 Dark Mode</button>
 
     <footer>
         <p>&copy; 2025 Chandan Sharma. All rights reserved.</p>
     </footer>
-
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 
