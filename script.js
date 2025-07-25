@@ -164,7 +164,7 @@ window.addEventListener('resize', setResponsiveMenu);
 //js for email sent to me 
 document.addEventListener("DOMContentLoaded", function() {
   (function(){
-    emailjs.init("JSNW18NPSlcYpAwWAsWO9");
+    emailjs.init("FBLE418WUTocen6Xd");
   })();
 
   var form = document.getElementById("contact-form");
